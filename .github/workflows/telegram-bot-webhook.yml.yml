@@ -1,0 +1,22 @@
+name: Telegram Bot Webhook
+
+on:
+  push:
+    branches:
+      - main  # Modify this branch name as needed
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Trigger Webhook
+        run: |
+          # Replace YOUR_BOT_TOKEN and YOUR_CHAT_ID with your Telegram bot token and chat ID.
+          curl -X POST "https://api.telegram.org/bot6536986035:AAGO4Um9PIL17HHlG7WirOwM3kZbqUhQH6o/sendMessage" \
+               -d "chat_id=-4020364264" \
+               -d "text=Bot code has been updated on GitHub."
+
