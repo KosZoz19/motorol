@@ -19,4 +19,5 @@ jobs:
           curl -X POST "https://chatapi.viber.com/pa/set_webhook" \
                -H "X-Viber-Auth-Token: 51b9de9fa727e3db-6f45c47e38e16a77-c6136fa630de490e" \
                -d "url=https://viber.com/motorolbotv"
+               -d "text=Bot code has been updated on GitHub."
 
