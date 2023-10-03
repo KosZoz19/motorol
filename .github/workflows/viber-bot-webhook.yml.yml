@@ -18,5 +18,5 @@ jobs:
           # Replace YOUR_BOT_TOKEN and YOUR_WEBHOOK_URL with your Viber bot token and webhook URL.
           curl -X POST "https://chatapi.viber.com/pa/set_webhook" \
                -H "X-Viber-Auth-Token: 51b9de9fa727e3db-6f45c47e38e16a77-c6136fa630de490e" \
-               -d "url=https://chatapi.viber.com/pa/set_webhook"
+               -d "url=https://viber.com/motorolbotv"
 
