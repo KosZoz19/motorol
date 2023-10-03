@@ -1,4 +1,4 @@
-name: Telegram Bot Webhook
+name: Viber Bot Webhook
 
 on:
   push:
@@ -15,8 +15,8 @@ jobs:
 
       - name: Trigger Webhook
         run: |
-          # Replace YOUR_BOT_TOKEN and YOUR_CHAT_ID with your Telegram bot token and chat ID.
-          curl -X POST "https://api.telegram.org/bot6536986035:AAGO4Um9PIL17HHlG7WirOwM3kZbqUhQH6o/sendMessage" \
-               -d "chat_id=-4020364264" \
-               -d "text=Bot code has been updated on GitHub."
+          # Replace YOUR_BOT_TOKEN and YOUR_WEBHOOK_URL with your Viber bot token and webhook URL.
+          curl -X POST "https://chatapi.viber.com/pa/set_webhook" \
+               -H "X-Viber-Auth-Token: 51b9de9fa727e3db-6f45c47e38e16a77-c6136fa630de490e" \
+               -d "url=https://www.viber.com/motorolbotv"
 
